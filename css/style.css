@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #636363;
+
+}
+
+/* HEADER  */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 50px;
+    position: absolute;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li {
+    padding: 55px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #101010;
+    font-weight: 500;
+}
+
+nav ul li a i {
+    font-size: 10px;
+}
+
+nav button {
+    color: white;
+    padding: 20px 35px;
+    font-size: 15px;
+    background-size: 200%;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-position: right center;
+}
+
+/* TITLE  */
+.title p{
+    font-size: 22px;
+    color: #f55f8d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.title h2{
+    font-size: 70px;
+    color: #262626;
+}
+/* BUTTON  */
+.btn-gradient{
+    color: white;
+    padding: 20px 35px;
+    font-size: 15px;
+    background-size: 200%;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/* CAROUSEL  */
+#carousel {
+    background-image: url(./../image/pic2.png);
+    padding-top: 180px;
+    background-size: 100%;
+}
+
+.content__carousel {
+    display: flex;
+    align-items: center;
+    /* margin-left: 10%; */
+
+
+}
+
+/* LEFT  */
+.content__carousel .left {
+    width: 60%;
+    padding-right: 40px;
+    margin-left: 10%;
+}
+
+.content__carousel .left .title p {
+    
+
+    
+    animation-duration: 2s;
+}
+
+.content__carousel .left .title h2 {
+    
+    margin-bottom: 20px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.content__carousel .left .article p {
+    font-size: 18px;
+    color: #636363;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    animation-delay: 2s;
+}
+
+.content__carousel .left .article ul {
+    list-style: none;
+    margin-bottom: 20px;
+    color: #636363;
+    animation-delay: 3s;
+}
+
+.content__carousel .left .article ul li {
+    margin-bottom: 20px;
+}
+
+.content__carousel .left .article ul i {
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+}
+
+.content__carousel .left .article button {
+    border: none;
+    padding: 20px 35px;
+    border-radius: 50px;
+    color: white;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.content__carousel .left .article .btn-started {
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-delay: 4s;
+}
+
+.article button:hover {
+    background-position: right center;
+}
+
+/* RIGHT  */
+#carousel .right {
+    animation-duration: 2s;
+    animation-delay: 3s;
+    margin-right: 100px;
+   
+}
+/* SERVICE  */
+#service{
+    text-align: center;
+    padding-top: 115px;
+    background-image: url(./../image/bg2.png);
+    background-position: top center;
+    background-size: cover;
+}
+#service .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.service__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+.service__content .service__item{
+    padding: 35px 45px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.176) 0 0 10px;
+    transition: all .5s;
+    transform: translateY(0);
+
+}
+.service__content .service__item img{
+    width: 215px;
+}
+.service__content .service__item h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 15px 0;
+    color: black;
+}
+.service__content .service__item p{
+    line-height: 1.6;
+}
+.service__content .service__item:hover{
+    transform: translateY(-20px);
+}
+/* ABOUT US  */
+/* #about{
+    padding-top: 115px;
+    padding-bottom: 85px;
+}
+#about .container{
+    margin: 0 auto;
+    width: 80%;
+}
+#about .content{
+    display: flex;
+    align-items:center  ;
+}
+.left{
+    width: 50%;
+    position: relative;
+}
+.left img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -110px;
+}
+.right{
+    width: 50%;
+    margin-right: 0;
+} */
+
+
+
+    /* RIGHT  */
+/* #about .content .right .title{
+    margin-bottom: 20px;
+}
+#about .content .right > p{
+    margin-bottom: 15px;
+}
+#about .content .right li{
+    line-height: 1.6rem;
+    font-size: 18px;
+}
+#about .content .right ul{
+    margin-bottom: 20px;
+}
+#about .content .right li i{
+    margin-right: 10px;
+    font-size: 24px;
+    color: #f55f8d;
+} */
+    /* LEFT  */
+/* #about .container .left{
+    width: 60%;
+    position: absolute;
+    left: -17%;
+} */
+/* ABOUT US  */
+.about .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+.about .container {
+    margin: auto;
+    width: 80%;
+}
+.about .container .left {
+    width: 50%;
+    left: -17%;
+}
+.about .container .left img {
+    display: block;
+    width: 715px;
+    margin-left: -130px;
+    border-radius: 0 100px 100px 0;
+}
+.about .container .right {
+    width: 50%;
+    margin: 0;
+}
+.about .container .right .title{
+    margin-bottom: 20px;
+}
+.about .container .right p{
+    margin-bottom: 20px;
+}
+.about .container .right ul{
+    margin-bottom: 30px;
+}
+.about .container .right li {
+    list-style: none;
+    font-size: 19px;
+    line-height: 1.6rem;
+}
+.about .content .right li i{
+    margin-right: 10px;
+    font-size: 24px;
+    color: #f55f8d;
+}
+.about .container .left{
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-delay: .2s;
+}
+.about .container .right{
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+    animation-delay: .2s;
+
+}
